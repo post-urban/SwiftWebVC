@@ -17,8 +17,6 @@ public class SwiftModalWebVC: UINavigationController {
         case arrow, cross
     }
     
-    weak var webViewDelegate: UIWebViewDelegate? = nil
-    
     public convenience init(urlString: String, sharingEnabled: Bool = true) {
         var urlString = urlString
         if !urlString.hasPrefix("https://") && !urlString.hasPrefix("http://") {
